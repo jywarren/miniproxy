@@ -1,0 +1,11 @@
+MINIPROXY
+
+This allows access of any website through an https SSL proxy, simply by navigating to:
+
+https://my-url.com?q=http://target-url.com
+
+It modifies all links in the content to use the proxy as well. Currently, it does not intercept relative URLs or URLS in javascript or CSS files. 
+
+Pretty much the entire system is in app/controllers/proxy_controller.rb, with just one route in config/routes.rb
+
+Have fun.
